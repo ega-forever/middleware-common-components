@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/ega-forever/middleware-common-components/issues"
   },
-  "homepage": "https://github.com/ega-forever/middleware-common-components#readme"
+  "homepage": "https://github.com/ega-forever/middleware-common-components#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bunyan": "^1.8.12",
+    "uniqid": "^5.0.3"
+  }
 }
