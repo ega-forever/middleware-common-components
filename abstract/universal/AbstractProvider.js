@@ -34,7 +34,7 @@ module.exports = class AbstractProvider {
   async setRabbitmqChannel(rabbitmqChannel, rabbitServiceName) {
     this.rabbitmqChannel = rabbitmqChannel;
     this.rabbitServiceName = rabbitServiceName;
-    await rabbitmqChannel.assertQueue(`${this.rabbitServiceName}_provider.${this.id}`, {durable: false});
+    await rabbitmqChannel.assertQueue(`${this.rabbitServiceName}_provider.${this.id}`, {autoDelete: true});
     await rabbitmqChannel.bindQueue(`${this.rabbitServiceName}_provider.${this.id}`, 'internal', `${this.rabbitServiceName}_current_provider.set`);
     this._startListenProviderUpdates();
   }
