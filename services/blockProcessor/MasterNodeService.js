@@ -119,7 +119,7 @@ class MasterNode {
    * @memberOf MasterNode
    */
   async start () {
-    await this.channel.assertExchange(EXCHANGE_NAME, 'direct', {autoDelete: true});
+    await this.channel.assertExchange(EXCHANGE_NAME, 'topic', {durable: false});
     this._onSetMasterEvent();
     this._onFindMasterEvent();
     await Promise.delay(MASTER_UPDATE_TIMEOUT);
