@@ -12,7 +12,7 @@ const MASTER_UPDATE_TIMEOUT = 2000;
 const MASTER_FIND_TIMEOUT = 2000;
 const MASTER_SYNC_TIMEOUT = 2000;
 
-const EXCHANGE_NAME = 'master_events';
+const EXCHANGE_NAME = 'internal';
 
 /**
  * @class MasterNode
