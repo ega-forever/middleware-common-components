@@ -1,0 +1,25 @@
+{
+  "name": "middleware-common-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ega-forever/middleware-common-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ega-forever/middleware-common-components/issues"
+  },
+  "homepage": "https://github.com/ega-forever/middleware-common-components#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bunyan": "^1.8.12",
+    "semaphore": "^1.1.0",
+    "uniqid": "^5.0.3"
+  }
+}
